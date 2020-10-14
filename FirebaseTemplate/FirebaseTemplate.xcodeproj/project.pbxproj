@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54CC710D25333F2700CD04E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54CC710C25333F2700CD04E6 /* GoogleService-Info.plist */; };
+		54CC711725335AB400CD04E6 /* Cairo Bold 700.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54CC711125335AB400CD04E6 /* Cairo Bold 700.ttf */; };
+		54CC711825335AB400CD04E6 /* Cairo SemiBold 600.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54CC711225335AB400CD04E6 /* Cairo SemiBold 600.ttf */; };
+		54CC711925335AB400CD04E6 /* Cairo Light 300.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54CC711325335AB400CD04E6 /* Cairo Light 300.ttf */; };
+		54CC711A25335AB400CD04E6 /* Cairo Regular 400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54CC711425335AB400CD04E6 /* Cairo Regular 400.ttf */; };
+		54CC711B25335AB400CD04E6 /* Cairo Black 900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54CC711525335AB400CD04E6 /* Cairo Black 900.ttf */; };
+		54CC711C25335AB400CD04E6 /* Cairo ExtraLight 275.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54CC711625335AB400CD04E6 /* Cairo ExtraLight 275.ttf */; };
+		54CC711F25337E5300CD04E6 /* StoresVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC711E25337E5300CD04E6 /* StoresVC.swift */; };
+		54CC712225337E7400CD04E6 /* Stores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC712125337E7400CD04E6 /* Stores.swift */; };
+		54CC7126253384D200CD04E6 /* StoresCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC7125253384D200CD04E6 /* StoresCellVC.swift */; };
+		54CC71312534D08D00CD04E6 /* CreateList1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC71302534D08D00CD04E6 /* CreateList1VC.swift */; };
+		54CC71342534D0C400CD04E6 /* CreateList2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC71332534D0C400CD04E6 /* CreateList2VC.swift */; };
+		54CC71372534D0F900CD04E6 /* CreateList3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC71362534D0F900CD04E6 /* CreateList3VC.swift */; };
+		54CC713A2534D14E00CD04E6 /* Gifts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CC71392534D14E00CD04E6 /* Gifts.swift */; };
 		D209076024B9EA180069B920 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D209075F24B9EA180069B920 /* Main.storyboard */; };
 		D209076324B9ED810069B920 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209076224B9ED810069B920 /* SignInVC.swift */; };
 		D209076524B9EE8D0069B920 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209076424B9EE8D0069B920 /* SignUpVC.swift */; };
 		D209076724B9FB0D0069B920 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209076624B9FB0D0069B920 /* HomeVC.swift */; };
 		D209076924B9FDC60069B920 /* CreateItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209076824B9FDC60069B920 /* CreateItemVC.swift */; };
 		D209076B24B9FDD80069B920 /* ItemListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209076A24B9FDD80069B920 /* ItemListVC.swift */; };
-		D26B2C612469F2A200470CA2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D26B2C602469F2A200470CA2 /* GoogleService-Info.plist */; };
 		D2C26FD424662807005E16A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C26FD324662807005E16A3 /* AppDelegate.swift */; };
 		D2C26FD624662807005E16A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C26FD524662807005E16A3 /* SceneDelegate.swift */; };
 		D2C26FDA24662809005E16A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2C26FD924662809005E16A3 /* Assets.xcassets */; };
@@ -59,6 +72,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54CC710C25333F2700CD04E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		54CC711125335AB400CD04E6 /* Cairo Bold 700.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo Bold 700.ttf"; sourceTree = "<group>"; };
+		54CC711225335AB400CD04E6 /* Cairo SemiBold 600.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo SemiBold 600.ttf"; sourceTree = "<group>"; };
+		54CC711325335AB400CD04E6 /* Cairo Light 300.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo Light 300.ttf"; sourceTree = "<group>"; };
+		54CC711425335AB400CD04E6 /* Cairo Regular 400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo Regular 400.ttf"; sourceTree = "<group>"; };
+		54CC711525335AB400CD04E6 /* Cairo Black 900.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo Black 900.ttf"; sourceTree = "<group>"; };
+		54CC711625335AB400CD04E6 /* Cairo ExtraLight 275.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo ExtraLight 275.ttf"; sourceTree = "<group>"; };
+		54CC711E25337E5300CD04E6 /* StoresVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresVC.swift; sourceTree = "<group>"; };
+		54CC712125337E7400CD04E6 /* Stores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stores.swift; sourceTree = "<group>"; };
+		54CC7125253384D200CD04E6 /* StoresCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StoresCellVC.swift; path = FirebaseTemplate/StoresCellVC.swift; sourceTree = SOURCE_ROOT; };
+		54CC71302534D08D00CD04E6 /* CreateList1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreateList1VC.swift; path = FirebaseTemplate/ViewControllers/profile/Gifts/CreateList1VC.swift; sourceTree = SOURCE_ROOT; };
+		54CC71332534D0C400CD04E6 /* CreateList2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreateList2VC.swift; path = FirebaseTemplate/ViewControllers/profile/Gifts/CreateList2VC.swift; sourceTree = SOURCE_ROOT; };
+		54CC71362534D0F900CD04E6 /* CreateList3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreateList3VC.swift; path = FirebaseTemplate/ViewControllers/profile/Gifts/CreateList3VC.swift; sourceTree = SOURCE_ROOT; };
+		54CC71392534D14E00CD04E6 /* Gifts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gifts.swift; sourceTree = "<group>"; };
 		9377AE6CE82235456148A2D9 /* Pods-FirebaseTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTemplate.release.xcconfig"; path = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		B1FD124CAB9AE9745E818900 /* Pods-FirebaseTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTemplate.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		D209075F24B9EA180069B920 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -67,7 +94,6 @@
 		D209076624B9FB0D0069B920 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		D209076824B9FDC60069B920 /* CreateItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateItemVC.swift; sourceTree = "<group>"; };
 		D209076A24B9FDD80069B920 /* ItemListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListVC.swift; sourceTree = "<group>"; };
-		D26B2C602469F2A200470CA2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D2C26FD024662807005E16A3 /* FirebaseTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C26FD324662807005E16A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2C26FD524662807005E16A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +185,71 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		54CC711025335A9E00CD04E6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				54CC711525335AB400CD04E6 /* Cairo Black 900.ttf */,
+				54CC711125335AB400CD04E6 /* Cairo Bold 700.ttf */,
+				54CC711625335AB400CD04E6 /* Cairo ExtraLight 275.ttf */,
+				54CC711325335AB400CD04E6 /* Cairo Light 300.ttf */,
+				54CC711425335AB400CD04E6 /* Cairo Regular 400.ttf */,
+				54CC711225335AB400CD04E6 /* Cairo SemiBold 600.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		54CC71242533848700CD04E6 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				54CC7125253384D200CD04E6 /* StoresCellVC.swift */,
+				54CC711E25337E5300CD04E6 /* StoresVC.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		54CC712B253482C900CD04E6 /* logins */ = {
+			isa = PBXGroup;
+			children = (
+				D209076224B9ED810069B920 /* SignInVC.swift */,
+				D209076424B9EE8D0069B920 /* SignUpVC.swift */,
+			);
+			path = logins;
+			sourceTree = "<group>";
+		};
+		54CC712C2534833A00CD04E6 /* search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = search;
+			sourceTree = "<group>";
+		};
+		54CC712D2534834200CD04E6 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				54CC713D2535ED8200CD04E6 /* Gifts */,
+				54CC713C2535ED7500CD04E6 /* home */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
+		54CC713C2535ED7500CD04E6 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				D209076624B9FB0D0069B920 /* HomeVC.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		54CC713D2535ED8200CD04E6 /* Gifts */ = {
+			isa = PBXGroup;
+			children = (
+				54CC71362534D0F900CD04E6 /* CreateList3VC.swift */,
+				54CC71332534D0C400CD04E6 /* CreateList2VC.swift */,
+				54CC71302534D08D00CD04E6 /* CreateList1VC.swift */,
+			);
+			path = Gifts;
+			sourceTree = "<group>";
+		};
 		8378283248B71B8695152817 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,9 +262,11 @@
 		D209076124B9ED660069B920 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D209076224B9ED810069B920 /* SignInVC.swift */,
-				D209076424B9EE8D0069B920 /* SignUpVC.swift */,
-				D209076624B9FB0D0069B920 /* HomeVC.swift */,
+				54CC712D2534834200CD04E6 /* profile */,
+				54CC712C2534833A00CD04E6 /* search */,
+				54CC710C25333F2700CD04E6 /* GoogleService-Info.plist */,
+				54CC712B253482C900CD04E6 /* logins */,
+				54CC71242533848700CD04E6 /* Stores */,
 				D209076824B9FDC60069B920 /* CreateItemVC.swift */,
 				D209076A24B9FDD80069B920 /* ItemListVC.swift */,
 			);
@@ -202,8 +295,8 @@
 		D2C26FD224662807005E16A3 /* FirebaseTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				54CC711025335A9E00CD04E6 /* Fonts */,
 				D209076124B9ED660069B920 /* ViewControllers */,
-				D26B2C602469F2A200470CA2 /* GoogleService-Info.plist */,
 				D2C26FD324662807005E16A3 /* AppDelegate.swift */,
 				D2C26FD524662807005E16A3 /* SceneDelegate.swift */,
 				D209075F24B9EA180069B920 /* Main.storyboard */,
@@ -301,6 +394,8 @@
 			children = (
 				D2C2705124662C9A005E16A3 /* User.swift */,
 				D2C2705624662F3F005E16A3 /* Item.swift */,
+				54CC712125337E7400CD04E6 /* Stores.swift */,
+				54CC71392534D14E00CD04E6 /* Gifts.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -365,11 +460,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54CC711925335AB400CD04E6 /* Cairo Light 300.ttf in Resources */,
+				54CC710D25333F2700CD04E6 /* GoogleService-Info.plist in Resources */,
+				54CC711A25335AB400CD04E6 /* Cairo Regular 400.ttf in Resources */,
+				54CC711B25335AB400CD04E6 /* Cairo Black 900.ttf in Resources */,
 				D2C26FE024662809005E16A3 /* LaunchScreen.storyboard in Resources */,
+				54CC711825335AB400CD04E6 /* Cairo SemiBold 600.ttf in Resources */,
+				54CC711725335AB400CD04E6 /* Cairo Bold 700.ttf in Resources */,
 				D209076024B9EA180069B920 /* Main.storyboard in Resources */,
 				D2C26FDD24662809005E16A3 /* Preview Assets.xcassets in Resources */,
+				54CC711C25335AB400CD04E6 /* Cairo ExtraLight 275.ttf in Resources */,
 				D2C26FDA24662809005E16A3 /* Assets.xcassets in Resources */,
-				D26B2C612469F2A200470CA2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +523,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54CC71312534D08D00CD04E6 /* CreateList1VC.swift in Sources */,
 				D2C26FD424662807005E16A3 /* AppDelegate.swift in Sources */,
 				D2C2704C24662C6E005E16A3 /* Networking.swift in Sources */,
 				D2C2705724662F3F005E16A3 /* Item.swift in Sources */,
@@ -429,17 +531,23 @@
 				D2C2704B24662C68005E16A3 /* Optional.swift in Sources */,
 				D2C26FD624662807005E16A3 /* SceneDelegate.swift in Sources */,
 				D2C2704924662C68005E16A3 /* Codable.swift in Sources */,
+				54CC712225337E7400CD04E6 /* Stores.swift in Sources */,
 				D2C2704724662C63005E16A3 /* ValidatePassword.swift in Sources */,
 				D2C2704A24662C68005E16A3 /* Keyboard.swift in Sources */,
+				54CC711F25337E5300CD04E6 /* StoresVC.swift in Sources */,
 				D209076924B9FDC60069B920 /* CreateItemVC.swift in Sources */,
 				D2C2704624662C63005E16A3 /* ImageUploader.swift in Sources */,
 				D209076B24B9FDD80069B920 /* ItemListVC.swift in Sources */,
 				D2C2705224662C9A005E16A3 /* User.swift in Sources */,
+				54CC7126253384D200CD04E6 /* StoresCellVC.swift in Sources */,
 				D209076324B9ED810069B920 /* SignInVC.swift in Sources */,
 				D2C2705024662C73005E16A3 /* NetworkingSignUp.swift in Sources */,
 				D2C2704524662C63005E16A3 /* ImageLoader.swift in Sources */,
 				D2C2704824662C63005E16A3 /* DateFromatter.swift in Sources */,
 				D2C2704F24662C73005E16A3 /* NetowrkableAuth.swift in Sources */,
+				54CC71372534D0F900CD04E6 /* CreateList3VC.swift in Sources */,
+				54CC713A2534D14E00CD04E6 /* Gifts.swift in Sources */,
+				54CC71342534D0C400CD04E6 /* CreateList2VC.swift in Sources */,
 				D2C2704D24662C6E005E16A3 /* NetworkingImages.swift in Sources */,
 				D209076524B9EE8D0069B920 /* SignUpVC.swift in Sources */,
 			);
@@ -598,7 +706,7 @@
 					"$(OTHER_LDFLAGS)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.khatma.com;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Mariam.Giftspp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -630,7 +738,7 @@
 					"$(OTHER_LDFLAGS)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.khatma.com;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Mariam.Giftspp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

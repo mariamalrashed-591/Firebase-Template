@@ -10,12 +10,14 @@ import UIKit
 
 class SignUpVC: UIViewController {
     @IBOutlet weak var firstNameField: UITextField!
-    @IBOutlet weak var lastNameField: UITextField!
-    @IBOutlet weak var phoneNumberField: UITextField!
+    @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var conformPasswordField: UITextField!
-
+    @IBOutlet weak var dayDate: UITextField!
+    @IBOutlet weak var monthDate: UITextField!
+    @IBOutlet weak var yearDate: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,14 +30,12 @@ class SignUpVC: UIViewController {
         let password = passwordField.text!
         let conformPassword = conformPasswordField.text!
         let firstName = firstNameField.text!
-        let lastName = lastNameField.text!
-        let phoneNumber = phoneNumberField.text!
+        let username = usernameField.text!
         
         // You can use another User Struct as you wish
         let user = User(firstName: firstName,
-                        lastName: lastName,
-                        email: email,
-                        phoneNumber: phoneNumber)
+                        username: username,
+                        email: email)
 
         if validatePassword(password: password, conformPassword: conformPassword){
             Networking.signUp(user: user, password: password, success:  { uid in
