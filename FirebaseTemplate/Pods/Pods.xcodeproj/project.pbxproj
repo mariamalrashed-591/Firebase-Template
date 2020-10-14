@@ -7,22 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10894F5B99C0D1EB777A20C29957E974 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		34B69AB6C587C098F77FB9F27B26517D /* Pods-FirebaseTemplate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC5147F33F85708C78BDE617E5EC29E /* Pods-FirebaseTemplate-dummy.m */; };
-		3F6B5DC5052879A2FE370FDA56495BF8 /* Pods-FirebaseTemplate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FCC7694754B2EE901086C94DE914CC3 /* Pods-FirebaseTemplate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4706B5C1199769368CCCAE71DA4B2D48 /* FirebaseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B148ED1BA1AF1F499E763ED1A2411DE /* FirebaseDecoder.swift */; };
-		495DF828C1AF627FBFE643262EB44EED /* FirestoreEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2523C4214495DFB9382AC11787C944 /* FirestoreEncoder.swift */; };
-		496841BD4BF3A5D3124798FFDB672ACB /* CodableFirebase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5F7A077DD92657D6C7EEA21503AE9F /* CodableFirebase-dummy.m */; };
-		71A110BB468C3036A87A3230E5C7E891 /* FirebaseEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C1BFAAF301BE2FF06540DF8ECB1031 /* FirebaseEncoder.swift */; };
+		023483EF6721F8033AAC6FA4509B0105 /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AC110EBC003A5E2FBCAFC4600E375B /* PermissionsView.swift */; };
+		07D3BAAB9F1D7BA4825DBF8150F78E87 /* CameraView.strings in Resources */ = {isa = PBXBuildFile; fileRef = 879664C8F44EB57873EB1412216C9319 /* CameraView.strings */; };
+		0ECC1E5004C894600FA8A271B66DEDE6 /* SingleImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2095841AC0FCF4C842642F6F5F932774 /* SingleImageFetcher.swift */; };
+		1140ED5D4474F84751637FFA17351341 /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CA5DF417C1FC8E83C7A69EA3A0DB /* ConfirmViewController.swift */; };
+		17D127410C33EFA57783E119AE6331FF /* VolumeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CB4F3D62B274B621AE177860465634 /* VolumeControl.swift */; };
+		1C26BD6F12ADF390CC5EF342891F5BDC /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939BFC417977635345C6D3F8E2604A3B /* ImageCell.swift */; };
+		2934478BDB6C711E6313B9E9B712716C /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7773908AB21E73A547850B429F8C8FAC /* CameraView.swift */; };
+		29DECE041019CE945AAA17EEDB1B3FDB /* CameraViewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25F0CA932461E3676C8F092098DF73B4 /* CameraViewAssets.xcassets */; };
+		2B387CDEA424D774B669A08EF29299AD /* PhotoLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F016363C4A3B893200A84EC6431F0C2 /* PhotoLibraryViewController.swift */; };
+		2C2BC7EE0BE778C040C5CDE3085C53E0 /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1089EC811C48404C3CCA32A157649314 /* ImageFetcher.swift */; };
+		40B948B85F9DD18926F8CE71FE12EF9E /* ALCameraViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51000C57DF3E0CB07A90FCA8B79F3D1A /* ALCameraViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4706B5C1199769368CCCAE71DA4B2D48 /* FirebaseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8C029AF6F10D4E188FDF770E390295 /* FirebaseDecoder.swift */; };
+		495DF828C1AF627FBFE643262EB44EED /* FirestoreEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95F19463F8E11A5EEF158FBD1B7F965 /* FirestoreEncoder.swift */; };
+		496841BD4BF3A5D3124798FFDB672ACB /* CodableFirebase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF84D5DFD9D9580FBCDF6187FA66F6A /* CodableFirebase-dummy.m */; };
+		4B0567F290F5EB50A1B3984EB6F09F30 /* Pods-FirebaseTemplate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FCC7694754B2EE901086C94DE914CC3 /* Pods-FirebaseTemplate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5165DB589723210842E210269D050751 /* CroppingParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663A203C3C4CB46F1287C1D275A42288 /* CroppingParameters.swift */; };
+		5CFACF382D9204F792CB6C931E207DFB /* CameraGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BC54514F0B9BDE85A649363C7F2968 /* CameraGlobals.swift */; };
+		66EBDC6B347033F954BFEADC83B6E091 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		71A110BB468C3036A87A3230E5C7E891 /* FirebaseEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D6ADE95E13072EE64542D9809C0BAD /* FirebaseEncoder.swift */; };
+		79918DC57AAD81CF4570747D947D834E /* CropOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555B920AB7F0261BC53F501890EE17D5 /* CropOverlay.swift */; };
+		7B7E89CD84751B5C6682A047F483205A /* CameraShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F248BD23BB0A277B022E738CDADDE1 /* CameraShot.swift */; };
+		82C29EC20120B3EEF6B867F8B0A7B5AB /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA02ABF1299854E1DF84F95761AB1CA /* UIButtonExtensions.swift */; };
 		83788A7A607F2CE71B8B2563F7A544FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		A507FE0F5988DA4DBFF17075004D954D /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B0C4721B2D8519AE0677C3490E4C6B /* Encoder.swift */; };
-		D0A4065420FD2C1BE7E24D3B936F28DC /* FirestoreDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9DA1FD4555BB6048774B09900A6662 /* FirestoreDecoder.swift */; };
-		D6B1D0206F9583D5CE8FD99362BB47D4 /* CodableFirebase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5E99B3BA56A80CA8D19C30A97834A4 /* CodableFirebase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA990EEFEDD324E7849FFF378FF48D6E /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD20A75C4B9C4C54E5DD7251E4BB900F /* Decoder.swift */; };
+		854FA63BFE263E6D5ED8DDAAC20206CD /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DF59642BFB1A619665E81C0B0A2E19 /* UIViewExtensions.swift */; };
+		86F95728A271884544EA8E5BE4C813DB /* CameraViewControllerConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1A8ACE9CF1A915DED4EF2E912C4D81 /* CameraViewControllerConstraint.swift */; };
+		8BA8801CA92679EA832FA6D41B1ECECB /* PhotoLibraryAuthorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B38B8474517573A628B09DC455497B /* PhotoLibraryAuthorizer.swift */; };
+		A507FE0F5988DA4DBFF17075004D954D /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1013011DFA18DF845F5C064CF437C819 /* Encoder.swift */; };
+		AD8B47A2AA1ADD2A24DE172D30F3999C /* ALCameraViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E78DA0D1CCE0D461B1E2FD3B5CB6025 /* ALCameraViewController-dummy.m */; };
+		ADF8489E09D0D4C4BF03C96DF95E2C75 /* ConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDD85A88700E1A3CFDA6B2362A5B0E92 /* ConfirmViewController.xib */; };
+		BD04BA8286A128DD3E81B117BFC337CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		BDF1477984864423290760EB72C6A023 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37607160F2F6430C77246E5DA8ED8ACC /* CameraViewController.swift */; };
+		C4A7121FFDE59153BE08375B7260C1C6 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5FAF72CCD893127250B477A2819529 /* Utilities.swift */; };
+		D0A4065420FD2C1BE7E24D3B936F28DC /* FirestoreDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADF1670CF619ED997C588D25F0E28B /* FirestoreDecoder.swift */; };
+		D6B1D0206F9583D5CE8FD99362BB47D4 /* CodableFirebase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80A366DEFD0A027E8F3ACDAD16FA29BE /* CodableFirebase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D98EB3C499308BA57D37D2A21157F1A2 /* SingleImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282FC17404190A5AB457B8B9AB31743D /* SingleImageSaver.swift */; };
+		F0E5293A21AA20337C9629CBD96644FB /* Pods-FirebaseTemplate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC5147F33F85708C78BDE617E5EC29E /* Pods-FirebaseTemplate-dummy.m */; };
+		FA990EEFEDD324E7849FFF378FF48D6E /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCEF0F7808FC72CB17F8EDF572B9BB1 /* Decoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1EB3E8741D7423756285A74FA779E5DC /* PBXContainerItemProxy */ = {
+		897866FF699EF4B5AAF96CD0ACDAE672 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D151B72D5CE9336C8AD8927D077A295;
+			remoteInfo = ALCameraViewController;
+		};
+		D7CF266A2E7F8447A35E390E905D3AA6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -32,40 +64,78 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		076DA36490039FA61E345FEE892FEE75 /* CodableFirebase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CodableFirebase-Info.plist"; sourceTree = "<group>"; };
+		1013011DFA18DF845F5C064CF437C819 /* Encoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Encoder.swift; path = CodableFirebase/Encoder.swift; sourceTree = "<group>"; };
+		1089EC811C48404C3CCA32A157649314 /* ImageFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFetcher.swift; path = ALCameraViewController/Utilities/ImageFetcher.swift; sourceTree = "<group>"; };
 		178CF7B1DD812F16410D2D44A41352BD /* Pods-FirebaseTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FirebaseTemplate.release.xcconfig"; sourceTree = "<group>"; };
+		1BF84D5DFD9D9580FBCDF6187FA66F6A /* CodableFirebase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CodableFirebase-dummy.m"; sourceTree = "<group>"; };
 		1FC5147F33F85708C78BDE617E5EC29E /* Pods-FirebaseTemplate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FirebaseTemplate-dummy.m"; sourceTree = "<group>"; };
+		2095841AC0FCF4C842642F6F5F932774 /* SingleImageFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SingleImageFetcher.swift; path = ALCameraViewController/Utilities/SingleImageFetcher.swift; sourceTree = "<group>"; };
+		22AC6FE4A047CBE2C130B25C831A5488 /* ALCameraViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ALCameraViewController.release.xcconfig; sourceTree = "<group>"; };
+		25F0CA932461E3676C8F092098DF73B4 /* CameraViewAssets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = CameraViewAssets.xcassets; path = ALCameraViewController/CameraViewAssets.xcassets; sourceTree = "<group>"; };
+		282FC17404190A5AB457B8B9AB31743D /* SingleImageSaver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SingleImageSaver.swift; path = ALCameraViewController/Utilities/SingleImageSaver.swift; sourceTree = "<group>"; };
+		2F016363C4A3B893200A84EC6431F0C2 /* PhotoLibraryViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoLibraryViewController.swift; path = ALCameraViewController/ViewController/PhotoLibraryViewController.swift; sourceTree = "<group>"; };
 		341280964AD915F7A468202003E77CCB /* Pods-FirebaseTemplate-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FirebaseTemplate-acknowledgements.markdown"; sourceTree = "<group>"; };
+		37607160F2F6430C77246E5DA8ED8ACC /* CameraViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = ALCameraViewController/ViewController/CameraViewController.swift; sourceTree = "<group>"; };
+		3AAD03C73C237F68578AE140733609FF /* ALCameraViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ALCameraViewController-Info.plist"; sourceTree = "<group>"; };
 		40A20036A26938A73EB725D1FA820A75 /* Pods-FirebaseTemplate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FirebaseTemplate.modulemap"; sourceTree = "<group>"; };
 		4391BE1E7195C165B8EFB7E6976268EE /* Pods-FirebaseTemplate-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FirebaseTemplate-acknowledgements.plist"; sourceTree = "<group>"; };
-		475EA0F82A5E33C6AF6965CDB66F68A3 /* CodableFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CodableFirebase.release.xcconfig; sourceTree = "<group>"; };
 		4A94FC58A21534580DADDEF0DD4CCDB9 /* CodableFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CodableFirebase.framework; path = CodableFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		58684AA03E8976981239BC7DBBA42B30 /* CodableFirebase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodableFirebase-prefix.pch"; sourceTree = "<group>"; };
-		6C2523C4214495DFB9382AC11787C944 /* FirestoreEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FirestoreEncoder.swift; path = CodableFirebase/FirestoreEncoder.swift; sourceTree = "<group>"; };
+		4DBC3370367C35DB8943299F8D3E40E2 /* CodableFirebase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CodableFirebase.modulemap; sourceTree = "<group>"; };
+		51000C57DF3E0CB07A90FCA8B79F3D1A /* ALCameraViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ALCameraViewController-umbrella.h"; sourceTree = "<group>"; };
+		555B920AB7F0261BC53F501890EE17D5 /* CropOverlay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CropOverlay.swift; path = ALCameraViewController/Views/CropOverlay.swift; sourceTree = "<group>"; };
+		5E78DA0D1CCE0D461B1E2FD3B5CB6025 /* ALCameraViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ALCameraViewController-dummy.m"; sourceTree = "<group>"; };
+		64D6ADE95E13072EE64542D9809C0BAD /* FirebaseEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FirebaseEncoder.swift; path = CodableFirebase/FirebaseEncoder.swift; sourceTree = "<group>"; };
+		663A203C3C4CB46F1287C1D275A42288 /* CroppingParameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CroppingParameters.swift; path = ALCameraViewController/Utilities/CroppingParameters.swift; sourceTree = "<group>"; };
+		6ADEEF30F19292FE42D19E6E7A592AB0 /* CodableFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CodableFirebase.debug.xcconfig; sourceTree = "<group>"; };
+		6EA02ABF1299854E1DF84F95761AB1CA /* UIButtonExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIButtonExtensions.swift; path = ALCameraViewController/Utilities/UIButtonExtensions.swift; sourceTree = "<group>"; };
 		6EB9E0010C927600424072AD4D41497F /* Pods-FirebaseTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FirebaseTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		74BC54514F0B9BDE85A649363C7F2968 /* CameraGlobals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraGlobals.swift; path = ALCameraViewController/Utilities/CameraGlobals.swift; sourceTree = "<group>"; };
+		7773908AB21E73A547850B429F8C8FAC /* CameraView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraView.swift; path = ALCameraViewController/Views/CameraView.swift; sourceTree = "<group>"; };
 		7A0E44EFA9F246815E25992F9EE7515D /* Pods-FirebaseTemplate-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FirebaseTemplate-Info.plist"; sourceTree = "<group>"; };
-		7B148ED1BA1AF1F499E763ED1A2411DE /* FirebaseDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FirebaseDecoder.swift; path = CodableFirebase/FirebaseDecoder.swift; sourceTree = "<group>"; };
 		8012AB43E3CD02B54A9DC696E868C582 /* Pods-FirebaseTemplate-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FirebaseTemplate-frameworks.sh"; sourceTree = "<group>"; };
-		81B0C4721B2D8519AE0677C3490E4C6B /* Encoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Encoder.swift; path = CodableFirebase/Encoder.swift; sourceTree = "<group>"; };
+		80A366DEFD0A027E8F3ACDAD16FA29BE /* CodableFirebase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodableFirebase-umbrella.h"; sourceTree = "<group>"; };
+		86830D7C93F912D78FF60D1E88B0B17D /* ALCameraViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ALCameraViewController.debug.xcconfig; sourceTree = "<group>"; };
+		879664C8F44EB57873EB1412216C9319 /* CameraView.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = CameraView.strings; path = ALCameraViewController/CameraView.strings; sourceTree = "<group>"; };
 		8FCC7694754B2EE901086C94DE914CC3 /* Pods-FirebaseTemplate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FirebaseTemplate-umbrella.h"; sourceTree = "<group>"; };
+		90B38B8474517573A628B09DC455497B /* PhotoLibraryAuthorizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoLibraryAuthorizer.swift; path = ALCameraViewController/Utilities/PhotoLibraryAuthorizer.swift; sourceTree = "<group>"; };
+		939BFC417977635345C6D3F8E2604A3B /* ImageCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCell.swift; path = ALCameraViewController/Views/ImageCell.swift; sourceTree = "<group>"; };
+		9C1A8ACE9CF1A915DED4EF2E912C4D81 /* CameraViewControllerConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraViewControllerConstraint.swift; path = ALCameraViewController/ViewController/CameraViewControllerConstraint.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B095273A490C49951F51010B277DB8C7 /* CodableFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CodableFirebase.debug.xcconfig; sourceTree = "<group>"; };
-		BA5E99B3BA56A80CA8D19C30A97834A4 /* CodableFirebase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodableFirebase-umbrella.h"; sourceTree = "<group>"; };
-		C5BD22CC6B2FBCBB6EBDBEEB1B9AAE0D /* CodableFirebase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CodableFirebase.modulemap; sourceTree = "<group>"; };
-		C6C1BFAAF301BE2FF06540DF8ECB1031 /* FirebaseEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FirebaseEncoder.swift; path = CodableFirebase/FirebaseEncoder.swift; sourceTree = "<group>"; };
-		CC692CCA5E0D46E68F4F33B538735B32 /* CodableFirebase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CodableFirebase-Info.plist"; sourceTree = "<group>"; };
-		CE9DA1FD4555BB6048774B09900A6662 /* FirestoreDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FirestoreDecoder.swift; path = CodableFirebase/FirestoreDecoder.swift; sourceTree = "<group>"; };
+		AA5FAF72CCD893127250B477A2819529 /* Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = ALCameraViewController/Utilities/Utilities.swift; sourceTree = "<group>"; };
+		B4DF59642BFB1A619665E81C0B0A2E19 /* UIViewExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExtensions.swift; path = ALCameraViewController/Utilities/UIViewExtensions.swift; sourceTree = "<group>"; };
+		B9BEAB3FCB8BBD84D1A838898F34EB38 /* ALCameraViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ALCameraViewController-prefix.pch"; sourceTree = "<group>"; };
+		BCCEF0F7808FC72CB17F8EDF572B9BB1 /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoder.swift; path = CodableFirebase/Decoder.swift; sourceTree = "<group>"; };
+		C0F248BD23BB0A277B022E738CDADDE1 /* CameraShot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraShot.swift; path = ALCameraViewController/Utilities/CameraShot.swift; sourceTree = "<group>"; };
+		C95F19463F8E11A5EEF158FBD1B7F965 /* FirestoreEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FirestoreEncoder.swift; path = CodableFirebase/FirestoreEncoder.swift; sourceTree = "<group>"; };
+		D0C184645C1278B18112DB05C5CAB214 /* CodableFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CodableFirebase.release.xcconfig; sourceTree = "<group>"; };
+		D207CD5FE045F5DF02F24A050531F91B /* CodableFirebase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodableFirebase-prefix.pch"; sourceTree = "<group>"; };
+		D5AC110EBC003A5E2FBCAFC4600E375B /* PermissionsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionsView.swift; path = ALCameraViewController/Views/PermissionsView.swift; sourceTree = "<group>"; };
+		DBD6BB806D548C0CDEBF3995406879AA /* ALCameraViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ALCameraViewController.modulemap; sourceTree = "<group>"; };
+		E6CB4F3D62B274B621AE177860465634 /* VolumeControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VolumeControl.swift; path = ALCameraViewController/Utilities/VolumeControl.swift; sourceTree = "<group>"; };
 		E6EB14EF7C6A66A728ACA1637E35A4D2 /* Pods_FirebaseTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FirebaseTemplate.framework; path = "Pods-FirebaseTemplate.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB5F7A077DD92657D6C7EEA21503AE9F /* CodableFirebase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CodableFirebase-dummy.m"; sourceTree = "<group>"; };
-		FD20A75C4B9C4C54E5DD7251E4BB900F /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoder.swift; path = CodableFirebase/Decoder.swift; sourceTree = "<group>"; };
+		EAFE620751F017A164ECE9CAA3FC056F /* ALCameraViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ALCameraViewController.framework; path = ALCameraViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDD85A88700E1A3CFDA6B2362A5B0E92 /* ConfirmViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ConfirmViewController.xib; path = ALCameraViewController/ViewController/ConfirmViewController.xib; sourceTree = "<group>"; };
+		EE8C029AF6F10D4E188FDF770E390295 /* FirebaseDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FirebaseDecoder.swift; path = CodableFirebase/FirebaseDecoder.swift; sourceTree = "<group>"; };
+		F5A6CA5DF417C1FC8E83C7A69EA3A0DB /* ConfirmViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConfirmViewController.swift; path = ALCameraViewController/ViewController/ConfirmViewController.swift; sourceTree = "<group>"; };
+		FCADF1670CF619ED997C588D25F0E28B /* FirestoreDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FirestoreDecoder.swift; path = CodableFirebase/FirestoreDecoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E950FEC22BB47CFC986572DCB1883DDE /* Frameworks */ = {
+		23234EEB334620C33F2E1F67731A6BF2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10894F5B99C0D1EB777A20C29957E974 /* Foundation.framework in Frameworks */,
+				66EBDC6B347033F954BFEADC83B6E091 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB11CC54FDA03D7EFDA6FF971BA5F563 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD04BA8286A128DD3E81B117BFC337CD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,19 +167,29 @@
 			path = "Target Support Files/Pods-FirebaseTemplate";
 			sourceTree = "<group>";
 		};
-		4A31E505496E1183223DAFACE471B351 /* CodableFirebase */ = {
+		3E55322D61DD3796165044DF5B3E7449 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FD20A75C4B9C4C54E5DD7251E4BB900F /* Decoder.swift */,
-				81B0C4721B2D8519AE0677C3490E4C6B /* Encoder.swift */,
-				7B148ED1BA1AF1F499E763ED1A2411DE /* FirebaseDecoder.swift */,
-				C6C1BFAAF301BE2FF06540DF8ECB1031 /* FirebaseEncoder.swift */,
-				CE9DA1FD4555BB6048774B09900A6662 /* FirestoreDecoder.swift */,
-				6C2523C4214495DFB9382AC11787C944 /* FirestoreEncoder.swift */,
-				BF09CF01A1E97698EA5E3F72014AEB93 /* Support Files */,
+				4DBC3370367C35DB8943299F8D3E40E2 /* CodableFirebase.modulemap */,
+				1BF84D5DFD9D9580FBCDF6187FA66F6A /* CodableFirebase-dummy.m */,
+				076DA36490039FA61E345FEE892FEE75 /* CodableFirebase-Info.plist */,
+				D207CD5FE045F5DF02F24A050531F91B /* CodableFirebase-prefix.pch */,
+				80A366DEFD0A027E8F3ACDAD16FA29BE /* CodableFirebase-umbrella.h */,
+				6ADEEF30F19292FE42D19E6E7A592AB0 /* CodableFirebase.debug.xcconfig */,
+				D0C184645C1278B18112DB05C5CAB214 /* CodableFirebase.release.xcconfig */,
 			);
-			name = CodableFirebase;
-			path = CodableFirebase;
+			name = "Support Files";
+			path = "../Target Support Files/CodableFirebase";
+			sourceTree = "<group>";
+		};
+		4B0C3ED7281884390ABB0A0DE4D5AC51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAFE620751F017A164ECE9CAA3FC056F /* ALCameraViewController.framework */,
+				4A94FC58A21534580DADDEF0DD4CCDB9 /* CodableFirebase.framework */,
+				E6EB14EF7C6A66A728ACA1637E35A4D2 /* Pods_FirebaseTemplate.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -120,6 +200,15 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		6FC5FE417829495CAF9EA9B5AA3B58DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E89D59B97D3826952BE4811FB1050D5E /* ALCameraViewController */,
+				E027411462E6F427E895C38716CA9D5E /* CodableFirebase */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7D15EE9843288588D07A2965F79E1227 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,28 +217,14 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9F15090DD4CBFED4D2D542B3521A388F /* Products */ = {
+		C46858CF8F1290462EEEFACC4CD5685B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4A94FC58A21534580DADDEF0DD4CCDB9 /* CodableFirebase.framework */,
-				E6EB14EF7C6A66A728ACA1637E35A4D2 /* Pods_FirebaseTemplate.framework */,
+				879664C8F44EB57873EB1412216C9319 /* CameraView.strings */,
+				25F0CA932461E3676C8F092098DF73B4 /* CameraViewAssets.xcassets */,
+				EDD85A88700E1A3CFDA6B2362A5B0E92 /* ConfirmViewController.xib */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		BF09CF01A1E97698EA5E3F72014AEB93 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C5BD22CC6B2FBCBB6EBDBEEB1B9AAE0D /* CodableFirebase.modulemap */,
-				EB5F7A077DD92657D6C7EEA21503AE9F /* CodableFirebase-dummy.m */,
-				CC692CCA5E0D46E68F4F33B538735B32 /* CodableFirebase-Info.plist */,
-				58684AA03E8976981239BC7DBBA42B30 /* CodableFirebase-prefix.pch */,
-				BA5E99B3BA56A80CA8D19C30A97834A4 /* CodableFirebase-umbrella.h */,
-				B095273A490C49951F51010B277DB8C7 /* CodableFirebase.debug.xcconfig */,
-				475EA0F82A5E33C6AF6965CDB66F68A3 /* CodableFirebase.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/CodableFirebase";
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -157,10 +232,25 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				EBA3918496F8E8DE11D6E190526A5D67 /* Pods */,
-				9F15090DD4CBFED4D2D542B3521A388F /* Products */,
+				6FC5FE417829495CAF9EA9B5AA3B58DB /* Pods */,
+				4B0C3ED7281884390ABB0A0DE4D5AC51 /* Products */,
 				7D15EE9843288588D07A2965F79E1227 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		CF3F58D765705EE61B059369EE662612 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBD6BB806D548C0CDEBF3995406879AA /* ALCameraViewController.modulemap */,
+				5E78DA0D1CCE0D461B1E2FD3B5CB6025 /* ALCameraViewController-dummy.m */,
+				3AAD03C73C237F68578AE140733609FF /* ALCameraViewController-Info.plist */,
+				B9BEAB3FCB8BBD84D1A838898F34EB38 /* ALCameraViewController-prefix.pch */,
+				51000C57DF3E0CB07A90FCA8B79F3D1A /* ALCameraViewController-umbrella.h */,
+				86830D7C93F912D78FF60D1E88B0B17D /* ALCameraViewController.debug.xcconfig */,
+				22AC6FE4A047CBE2C130B25C831A5488 /* ALCameraViewController.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ALCameraViewController";
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -171,12 +261,48 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EBA3918496F8E8DE11D6E190526A5D67 /* Pods */ = {
+		E027411462E6F427E895C38716CA9D5E /* CodableFirebase */ = {
 			isa = PBXGroup;
 			children = (
-				4A31E505496E1183223DAFACE471B351 /* CodableFirebase */,
+				BCCEF0F7808FC72CB17F8EDF572B9BB1 /* Decoder.swift */,
+				1013011DFA18DF845F5C064CF437C819 /* Encoder.swift */,
+				EE8C029AF6F10D4E188FDF770E390295 /* FirebaseDecoder.swift */,
+				64D6ADE95E13072EE64542D9809C0BAD /* FirebaseEncoder.swift */,
+				FCADF1670CF619ED997C588D25F0E28B /* FirestoreDecoder.swift */,
+				C95F19463F8E11A5EEF158FBD1B7F965 /* FirestoreEncoder.swift */,
+				3E55322D61DD3796165044DF5B3E7449 /* Support Files */,
 			);
-			name = Pods;
+			name = CodableFirebase;
+			path = CodableFirebase;
+			sourceTree = "<group>";
+		};
+		E89D59B97D3826952BE4811FB1050D5E /* ALCameraViewController */ = {
+			isa = PBXGroup;
+			children = (
+				74BC54514F0B9BDE85A649363C7F2968 /* CameraGlobals.swift */,
+				C0F248BD23BB0A277B022E738CDADDE1 /* CameraShot.swift */,
+				7773908AB21E73A547850B429F8C8FAC /* CameraView.swift */,
+				37607160F2F6430C77246E5DA8ED8ACC /* CameraViewController.swift */,
+				9C1A8ACE9CF1A915DED4EF2E912C4D81 /* CameraViewControllerConstraint.swift */,
+				F5A6CA5DF417C1FC8E83C7A69EA3A0DB /* ConfirmViewController.swift */,
+				555B920AB7F0261BC53F501890EE17D5 /* CropOverlay.swift */,
+				663A203C3C4CB46F1287C1D275A42288 /* CroppingParameters.swift */,
+				939BFC417977635345C6D3F8E2604A3B /* ImageCell.swift */,
+				1089EC811C48404C3CCA32A157649314 /* ImageFetcher.swift */,
+				D5AC110EBC003A5E2FBCAFC4600E375B /* PermissionsView.swift */,
+				90B38B8474517573A628B09DC455497B /* PhotoLibraryAuthorizer.swift */,
+				2F016363C4A3B893200A84EC6431F0C2 /* PhotoLibraryViewController.swift */,
+				2095841AC0FCF4C842642F6F5F932774 /* SingleImageFetcher.swift */,
+				282FC17404190A5AB457B8B9AB31743D /* SingleImageSaver.swift */,
+				6EA02ABF1299854E1DF84F95761AB1CA /* UIButtonExtensions.swift */,
+				B4DF59642BFB1A619665E81C0B0A2E19 /* UIViewExtensions.swift */,
+				AA5FAF72CCD893127250B477A2819529 /* Utilities.swift */,
+				E6CB4F3D62B274B621AE177860465634 /* VolumeControl.swift */,
+				C46858CF8F1290462EEEFACC4CD5685B /* Resources */,
+				CF3F58D765705EE61B059369EE662612 /* Support Files */,
+			);
+			name = ALCameraViewController;
+			path = ALCameraViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,30 +316,57 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C864A573F6EA3ECB6DE87BC29CFA8733 /* Headers */ = {
+		95398634ACA689E6108B45CEF27658D4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F6B5DC5052879A2FE370FDA56495BF8 /* Pods-FirebaseTemplate-umbrella.h in Headers */,
+				4B0567F290F5EB50A1B3984EB6F09F30 /* Pods-FirebaseTemplate-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4417844CBE788511C2A86600F9E4275 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40B948B85F9DD18926F8CE71FE12EF9E /* ALCameraViewController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		AA0B4E350B1956ED5296370BE5DE0070 /* Pods-FirebaseTemplate */ = {
+		3D151B72D5CE9336C8AD8927D077A295 /* ALCameraViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FCB62A3F56D2131B2BC45DEBAD13DE6E /* Build configuration list for PBXNativeTarget "Pods-FirebaseTemplate" */;
+			buildConfigurationList = 3C824956660F94A02DB7586D859AC471 /* Build configuration list for PBXNativeTarget "ALCameraViewController" */;
 			buildPhases = (
-				C864A573F6EA3ECB6DE87BC29CFA8733 /* Headers */,
-				95180E21C694A141BBB23DFF3D787872 /* Sources */,
-				E950FEC22BB47CFC986572DCB1883DDE /* Frameworks */,
-				D34B6D422B211BF0C7D1F762FA1A874E /* Resources */,
+				A4417844CBE788511C2A86600F9E4275 /* Headers */,
+				AA484444FEB0440122AA793E1DE5AD9C /* Sources */,
+				AB11CC54FDA03D7EFDA6FF971BA5F563 /* Frameworks */,
+				F0DCB67CE432498D57435FE0F121359F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C466596D3ED0DBBD969DCA6444090D94 /* PBXTargetDependency */,
+			);
+			name = ALCameraViewController;
+			productName = ALCameraViewController;
+			productReference = EAFE620751F017A164ECE9CAA3FC056F /* ALCameraViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AA0B4E350B1956ED5296370BE5DE0070 /* Pods-FirebaseTemplate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1B72C1918AE057583C70C6B06F891AF /* Build configuration list for PBXNativeTarget "Pods-FirebaseTemplate" */;
+			buildPhases = (
+				95398634ACA689E6108B45CEF27658D4 /* Headers */,
+				1DF0E97CEC0EE107D2CA58E5D91CD4C1 /* Sources */,
+				23234EEB334620C33F2E1F67731A6BF2 /* Frameworks */,
+				E100F35219737A723EB12048AE225804 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8D60351BB978DF73FAF20F3309DA7A1 /* PBXTargetDependency */,
+				AA8CC0DEAEE8CCD6FB54127C05CC0E04 /* PBXTargetDependency */,
 			);
 			name = "Pods-FirebaseTemplate";
 			productName = "Pods-FirebaseTemplate";
@@ -256,10 +409,11 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 9F15090DD4CBFED4D2D542B3521A388F /* Products */;
+			productRefGroup = 4B0C3ED7281884390ABB0A0DE4D5AC51 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				3D151B72D5CE9336C8AD8927D077A295 /* ALCameraViewController */,
 				E348382FA7E1F8A639AFBFF3F8C4FC04 /* CodableFirebase */,
 				AA0B4E350B1956ED5296370BE5DE0070 /* Pods-FirebaseTemplate */,
 			);
@@ -274,21 +428,58 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D34B6D422B211BF0C7D1F762FA1A874E /* Resources */ = {
+		E100F35219737A723EB12048AE225804 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F0DCB67CE432498D57435FE0F121359F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07D3BAAB9F1D7BA4825DBF8150F78E87 /* CameraView.strings in Resources */,
+				29DECE041019CE945AAA17EEDB1B3FDB /* CameraViewAssets.xcassets in Resources */,
+				ADF8489E09D0D4C4BF03C96DF95E2C75 /* ConfirmViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		95180E21C694A141BBB23DFF3D787872 /* Sources */ = {
+		1DF0E97CEC0EE107D2CA58E5D91CD4C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34B69AB6C587C098F77FB9F27B26517D /* Pods-FirebaseTemplate-dummy.m in Sources */,
+				F0E5293A21AA20337C9629CBD96644FB /* Pods-FirebaseTemplate-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA484444FEB0440122AA793E1DE5AD9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD8B47A2AA1ADD2A24DE172D30F3999C /* ALCameraViewController-dummy.m in Sources */,
+				5CFACF382D9204F792CB6C931E207DFB /* CameraGlobals.swift in Sources */,
+				7B7E89CD84751B5C6682A047F483205A /* CameraShot.swift in Sources */,
+				2934478BDB6C711E6313B9E9B712716C /* CameraView.swift in Sources */,
+				BDF1477984864423290760EB72C6A023 /* CameraViewController.swift in Sources */,
+				86F95728A271884544EA8E5BE4C813DB /* CameraViewControllerConstraint.swift in Sources */,
+				1140ED5D4474F84751637FFA17351341 /* ConfirmViewController.swift in Sources */,
+				79918DC57AAD81CF4570747D947D834E /* CropOverlay.swift in Sources */,
+				5165DB589723210842E210269D050751 /* CroppingParameters.swift in Sources */,
+				1C26BD6F12ADF390CC5EF342891F5BDC /* ImageCell.swift in Sources */,
+				2C2BC7EE0BE778C040C5CDE3085C53E0 /* ImageFetcher.swift in Sources */,
+				023483EF6721F8033AAC6FA4509B0105 /* PermissionsView.swift in Sources */,
+				8BA8801CA92679EA832FA6D41B1ECECB /* PhotoLibraryAuthorizer.swift in Sources */,
+				2B387CDEA424D774B669A08EF29299AD /* PhotoLibraryViewController.swift in Sources */,
+				0ECC1E5004C894600FA8A271B66DEDE6 /* SingleImageFetcher.swift in Sources */,
+				D98EB3C499308BA57D37D2A21157F1A2 /* SingleImageSaver.swift in Sources */,
+				82C29EC20120B3EEF6B867F8B0A7B5AB /* UIButtonExtensions.swift in Sources */,
+				854FA63BFE263E6D5ED8DDAAC20206CD /* UIViewExtensions.swift in Sources */,
+				C4A7121FFDE59153BE08375B7260C1C6 /* Utilities.swift in Sources */,
+				17D127410C33EFA57783E119AE6331FF /* VolumeControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,16 +500,57 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C466596D3ED0DBBD969DCA6444090D94 /* PBXTargetDependency */ = {
+		AA8CC0DEAEE8CCD6FB54127C05CC0E04 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CodableFirebase;
 			target = E348382FA7E1F8A639AFBFF3F8C4FC04 /* CodableFirebase */;
-			targetProxy = 1EB3E8741D7423756285A74FA779E5DC /* PBXContainerItemProxy */;
+			targetProxy = D7CF266A2E7F8447A35E390E905D3AA6 /* PBXContainerItemProxy */;
+		};
+		E8D60351BB978DF73FAF20F3309DA7A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ALCameraViewController;
+			target = 3D151B72D5CE9336C8AD8927D077A295 /* ALCameraViewController */;
+			targetProxy = 897866FF699EF4B5AAF96CD0ACDAE672 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		32DAF217381CB923BA5951CF200BDD42 /* Debug */ = {
+		3290F1569345F9389A82852BFEC06A0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22AC6FE4A047CBE2C130B25C831A5488 /* ALCameraViewController.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ALCameraViewController/ALCameraViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ALCameraViewController/ALCameraViewController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ALCameraViewController/ALCameraViewController.modulemap";
+				PRODUCT_MODULE_NAME = ALCameraViewController;
+				PRODUCT_NAME = ALCameraViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3BCD103590E7A0B01E0028E07D6B9263 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6EB9E0010C927600424072AD4D41497F /* Pods-FirebaseTemplate.debug.xcconfig */;
 			buildSettings = {
@@ -355,12 +587,10 @@
 			};
 			name = Debug;
 		};
-		362C5ADBFD2458ABA2FBFBC8831414DE /* Release */ = {
+		3F471353707AB94FE2D4F8A9A0B5B4D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 178CF7B1DD812F16410D2D44A41352BD /* Pods-FirebaseTemplate.release.xcconfig */;
+			baseConfigurationReference = 86830D7C93F912D78FF60D1E88B0B17D /* ALCameraViewController.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -369,33 +599,31 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ALCameraViewController/ALCameraViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ALCameraViewController/ALCameraViewController-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/ALCameraViewController/ALCameraViewController.modulemap";
+				PRODUCT_MODULE_NAME = ALCameraViewController;
+				PRODUCT_NAME = ALCameraViewController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		50DD146C13DF97E4AE9BF012739D2320 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B095273A490C49951F51010B277DB8C7 /* CodableFirebase.debug.xcconfig */;
+			baseConfigurationReference = 6ADEEF30F19292FE42D19E6E7A592AB0 /* CodableFirebase.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -494,7 +722,7 @@
 		};
 		CCA605A27ED1936D1D552BA6CED52313 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 475EA0F82A5E33C6AF6965CDB66F68A3 /* CodableFirebase.release.xcconfig */;
+			baseConfigurationReference = D0C184645C1278B18112DB05C5CAB214 /* CodableFirebase.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -520,6 +748,44 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F4D112805EF0054B2BDE2C29EB6ACF80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 178CF7B1DD812F16410D2D44A41352BD /* Pods-FirebaseTemplate.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -591,6 +857,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3C824956660F94A02DB7586D859AC471 /* Build configuration list for PBXNativeTarget "ALCameraViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F471353707AB94FE2D4F8A9A0B5B4D8 /* Debug */,
+				3290F1569345F9389A82852BFEC06A0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -609,11 +884,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FCB62A3F56D2131B2BC45DEBAD13DE6E /* Build configuration list for PBXNativeTarget "Pods-FirebaseTemplate" */ = {
+		F1B72C1918AE057583C70C6B06F891AF /* Build configuration list for PBXNativeTarget "Pods-FirebaseTemplate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				32DAF217381CB923BA5951CF200BDD42 /* Debug */,
-				362C5ADBFD2458ABA2FBFBC8831414DE /* Release */,
+				3BCD103590E7A0B01E0028E07D6B9263 /* Debug */,
+				F4D112805EF0054B2BDE2C29EB6ACF80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
