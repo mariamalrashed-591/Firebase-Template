@@ -26,19 +26,25 @@ public class CameraView: UIView {
         session.sessionPreset = AVCaptureSession.Preset.photo
 
         device = cameraWithPosition(position: currentPosition)
-        if let device = device , device.hasFlash {
-            do {
-                try device.lockForConfiguration()
-                device.flashMode = .auto
-                device.unlockForConfiguration()
-            } catch _ {}
-        }
+        guard let device = device , device.hasFlash else {return}
+        do {
+            try device.lockForConfiguration()
+            device.flashMode = .auto
+            device.unlockForConfiguration()
+        } catch _ {}
+//        if let device = device , device.hasFlash {
+//            do {
+//                try device.lockForConfiguration()
+//                device.flashMode = .auto
+//                device.unlockForConfiguration()
+//            } catch _ {}
+//        }
 
         let outputSettings = [AVVideoCodecKey: AVVideoCodecJPEG]
 
         do {
-            input = try AVCaptureDeviceInput(device: device)
-        } catch let error as NSError {
+        input = try? AVCaptureDeviceInput(device: device)
+        }catch let error as NSError {
             input = nil
             print("Error: \(error.localizedDescription)")
             return

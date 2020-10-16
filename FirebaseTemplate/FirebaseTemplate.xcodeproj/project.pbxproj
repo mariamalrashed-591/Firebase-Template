@@ -264,7 +264,6 @@
 			children = (
 				54CC712D2534834200CD04E6 /* profile */,
 				54CC712C2534833A00CD04E6 /* search */,
-				54CC710C25333F2700CD04E6 /* GoogleService-Info.plist */,
 				54CC712B253482C900CD04E6 /* logins */,
 				54CC71242533848700CD04E6 /* Stores */,
 				D209076824B9FDC60069B920 /* CreateItemVC.swift */,
@@ -298,6 +297,7 @@
 				54CC711025335A9E00CD04E6 /* Fonts */,
 				D209076124B9ED660069B920 /* ViewControllers */,
 				D2C26FD324662807005E16A3 /* AppDelegate.swift */,
+				54CC710C25333F2700CD04E6 /* GoogleService-Info.plist */,
 				D2C26FD524662807005E16A3 /* SceneDelegate.swift */,
 				D209075F24B9EA180069B920 /* Main.storyboard */,
 				D2C2703E24662C5A005E16A3 /* Networking */,
@@ -688,7 +688,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FirebaseTemplate/Preview Content\"";
-				DEVELOPMENT_TEAM = 9VCECTYT2E;
+				DEVELOPMENT_TEAM = 4B2BFFGSP9;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -720,7 +720,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FirebaseTemplate/Preview Content\"";
-				DEVELOPMENT_TEAM = 9VCECTYT2E;
+				DEVELOPMENT_TEAM = 4B2BFFGSP9;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

@@ -10,6 +10,7 @@ struct User: Codable{
     var username: String = ""
     var email: String = ""
     var phoneNumber: String = ""
+    var imagePath: String
     
     func fullName() -> String{
         firstName 

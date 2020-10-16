@@ -52,6 +52,9 @@ class HomeVC: UIViewController {
                 self.profileData = profileData
                 print(dump(profileData))
             }
+        Networking.downlodImage(storagePath: "profileImages/\(uid)") { url in
+            <#code#>
+        }
             
         }
 

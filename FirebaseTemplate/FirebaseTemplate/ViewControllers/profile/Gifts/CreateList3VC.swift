@@ -12,6 +12,10 @@ class CreateList3VC: UIViewController {
 
     @IBOutlet weak var giftStore: UITextField!
     @IBOutlet weak var giftName: UITextField!
+    
+    var category: String!
+//    var categorie: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,8 +25,15 @@ class CreateList3VC: UIViewController {
     @IBAction func saveGift(_ sender: Any) {
         let name = giftName.text!
         let store = giftStore.text!
-        let gift3 = Gift3(giftName: name, giftStore: store)
-        let uid = Networking.getUserId()
+        let gift1 = Gift1(giftName: name, giftStore: store, categoryType: category!)
+                let uid = Networking.getUserId()
+        
+                Networking.createItem(gift1, inCollection: "users/\(uid!)/Gift" ) {
+                    print("Gift has been created")
+                } fail: { error in
+                    print("Gift hasnt been created")
+                }
+
         
 //        Networking.createItem(gift3, inCollection: "users/\(uid!)/Gift1", success: <#T##() -> Void#>)
     }

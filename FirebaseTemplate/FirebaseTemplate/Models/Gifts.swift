@@ -9,17 +9,18 @@
 import Foundation
 
 struct Gift1: Codable{
-    var listName: String
-    var listDate: String
+    var giftName: String
+    var giftStore: String
     var categoryType: String
+//    var giftImage: String
     
 }
 
-struct Gift3: Codable {
-    var giftName: String
-    var giftStore: String
-//    var giftPicture: String
-}
+//struct Gift3: Codable {
+//    var giftName: String
+//    var giftStore: String
+////    var giftPicture: String
+//}
 
-var categories = ["birthday", "graduation", "wedding", "new baby", "new house", "eid", "ramadhan", "back from travel", "get well soon", "mothers day"]
+let categories = ["birthday", "graduation", "wedding", "new baby", "new house", "eid", "ramadhan", "back from travel", "get well soon", "mothers day"]
  

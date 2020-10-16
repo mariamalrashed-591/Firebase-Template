@@ -25,19 +25,25 @@ class CreateList1VC: UIViewController {
     }
     
     @IBAction func saveList(_ sender: Any?) {
-        let name = listName.text!
-        let date = listDate.text!
-//        let category = listCategory.pi
-//        let category = listCategory.text!
-        let gift1 = Gift1(listName: name, listDate: date, categoryType: categorie)
-        let uid = Networking.getUserId()
-        
-        Networking.createItem(gift1, inCollection: "users/\(uid!)/\(categorie)" ) {
-            print("Gift has been created")
-        } fail: { error in
-            print("Gift hasnt been created")
-        }
+        performSegue(withIdentifier: "categoryToGift", sender: categorie)
+        print(categorie)
+//        let name = listName.text!
+//        let date = listDate.text!
+//        let gift1 = Gift1(listName: name, listDate: date, categoryType: categorie)
+//        let uid = Networking.getUserId()
+//
+//        Networking.createItem(gift1, inCollection: "users/\(uid!)/\(categorie!)" ) {
+//            print("Gift has been created")
+//        } fail: { error in
+//            print("Gift hasnt been created")
+//        }
 
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print(categorie)
+        let vc = segue.destination as! CreateList3VC
+        vc.category = sender as! String
     }
     
     
@@ -72,6 +78,7 @@ extension CreateList1VC: UIPickerViewDelegate {
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         categorie = categories[row]
+        print(categorie)
     }
     
 }

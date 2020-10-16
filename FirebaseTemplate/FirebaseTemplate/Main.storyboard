@@ -279,6 +279,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
                                 <connections>
+                                    <action selector="addImage:" destination="LXE-zx-4xL" eventType="touchUpInside" id="cLo-cs-sgy"/>
                                     <action selector="createCategory:" destination="8So-Xe-hVL" eventType="touchUpInside" id="WBX-dj-U8R"/>
                                 </connections>
                             </button>
@@ -295,6 +296,7 @@
                         <outlet property="firstNameField" destination="UHz-q1-lgA" id="MFs-Qt-tdK"/>
                         <outlet property="monthDate" destination="X9l-vJ-pfR" id="soU-OA-i1f"/>
                         <outlet property="passwordField" destination="Lw5-mX-8eq" id="Hbo-BJ-Lvj"/>
+                        <outlet property="profileImage" destination="DYP-SL-5nf" id="cHF-jZ-Rrl"/>
                         <outlet property="usernameField" destination="hce-ph-jXI" id="CEd-ZT-zUX"/>
                         <outlet property="yearDate" destination="y8T-L1-bu9" id="Pw5-n0-rPH"/>
                         <segue destination="JQU-Nb-yvl" kind="presentation" identifier="signed" modalPresentationStyle="fullScreen" id="kXf-bA-kZT"/>
@@ -481,29 +483,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="عنوان القائمة:" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcs-WW-Hz3">
-                                <rect key="frame" x="236" y="85" width="158" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="25"/>
-                                <color key="textColor" red="0.30775254959999998" green="0.10713321720000001" blue="0.52552002669999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="تاريخ المناسبة:" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQj-w7-tay">
-                                <rect key="frame" x="223" y="154" width="171" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="25"/>
-                                <color key="textColor" red="0.30775254959999998" green="0.10713321720000001" blue="0.52552002669999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="0OT-cF-gkC">
-                                <rect key="frame" x="23" y="94" width="187" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.8591884971" green="0.81805270910000005" blue="0.91765934230000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" red="0.25877982379999998" green="0.2509810925" blue="0.25098043679999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" red="0.25877982379999998" green="0.2509810925" blue="0.25098043679999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbB-lo-sZS">
                                 <rect key="frame" x="9" y="20" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -531,7 +510,6 @@
                                 </state>
                                 <connections>
                                     <action selector="saveList:" destination="dKv-lW-zgk" eventType="touchUpInside" id="HqK-uY-3SV"/>
-                                    <segue destination="UXS-N4-add" kind="presentation" identifier="categoryToGift" modalPresentationStyle="fullScreen" id="A2M-qj-G0f"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="إختر تصنيف قائمتك" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRA-jT-Qa7">
@@ -541,15 +519,6 @@
                                 <color key="textColor" red="0.30775254959999998" green="0.10713321720000001" blue="0.52552002669999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="OqW-m0-Lrx">
-                                <rect key="frame" x="28" y="163" width="187" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.8591884971" green="0.81805270910000005" blue="0.91765934230000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" red="0.25877982379999998" green="0.2509810925" blue="0.25098043679999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" red="0.25877982379999998" green="0.2509810925" blue="0.25098043679999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
-                            </textField>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jts-M0-7cY">
                                 <rect key="frame" x="0.0" y="468" width="414" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -562,8 +531,7 @@
                     <navigationItem key="navigationItem" id="IAf-dc-PqE"/>
                     <connections>
                         <outlet property="listCategory" destination="jts-M0-7cY" id="vl4-Ld-Wq7"/>
-                        <outlet property="listDate" destination="OqW-m0-Lrx" id="aRh-zc-LzC"/>
-                        <outlet property="listName" destination="0OT-cF-gkC" id="sed-25-Abj"/>
+                        <segue destination="UXS-N4-add" kind="presentation" identifier="categoryToGift" modalPresentationStyle="fullScreen" id="I8E-9t-KNA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="78O-RQ-Ubb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -756,7 +724,6 @@
                                 </state>
                                 <connections>
                                     <action selector="saveGift:" destination="UXS-N4-add" eventType="touchUpInside" id="m8s-0c-Hib"/>
-                                    <segue destination="QBc-Lf-IUH" kind="presentation" identifier="giftAdd" modalPresentationStyle="fullScreen" id="e41-Ci-ZK8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baF-GZ-baK">

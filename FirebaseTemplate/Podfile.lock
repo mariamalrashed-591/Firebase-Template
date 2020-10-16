@@ -1,20 +1,26 @@
 PODS:
   - ALCameraViewController (3.1)
   - CodableFirebase (0.2.1)
+  - SDWebImage (5.9.3):
+    - SDWebImage/Core (= 5.9.3)
+  - SDWebImage/Core (5.9.3)
 
 DEPENDENCIES:
   - ALCameraViewController
   - CodableFirebase
+  - SDWebImage (~> 5.0)
 
 SPEC REPOS:
   trunk:
     - ALCameraViewController
     - CodableFirebase
+    - SDWebImage
 
 SPEC CHECKSUMS:
   ALCameraViewController: 144dea45fd749a623aafd8cb7b10cea88499fcc3
   CodableFirebase: 0bf201991eeec35eb9fcd987d271ea463cf34a80
+  SDWebImage: a31ee8e90a97303529e03fb0c333eae0eacb88e9
 
-PODFILE CHECKSUM: e8af6f0295c7a25142bc3e7cca18dd91b6b9d4e7
+PODFILE CHECKSUM: a2077521bb84e96b45f8ba6365c4f375a3c180f6
 
 COCOAPODS: 1.9.3
