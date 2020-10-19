@@ -8,6 +8,7 @@
 
 import UIKit
 import ALCameraViewController
+import SDWebImage
 
 class SignUpVC: UIViewController {
     @IBOutlet weak var firstNameField: UITextField!
@@ -24,6 +25,7 @@ class SignUpVC: UIViewController {
     var createdProfile: User?
     
     override func viewDidLoad() {
+        profileImage.layer.cornerRadius = profileImage.frame.size.width/2
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
@@ -40,12 +42,12 @@ class SignUpVC: UIViewController {
         let conformPassword = conformPasswordField.text!
         let firstName = firstNameField.text!
         let username = usernameField.text!
-        
+        let uid = Networking.getUserId()!
         // You can use another User Struct as you wish
         let user = User(firstName: firstName,
                         username: username,
                         email: email,
-                        imagePath: "profileImages/\(username).png")
+                        imagePath: "profileImages/\(uid).png")
 
         if validatePassword(password: password, conformPassword: conformPassword){
             Networking.signUp(user: user, password: password, success:  { uid in
@@ -88,10 +90,12 @@ class SignUpVC: UIViewController {
 //            popErrorAlert(message: "there is no user")
 //            return
 //        }
-        
-        Networking.uploadImage(path: "profileImages", imageName: user.username, image: image) {
+        let uid = Networking.getUserId()
+        Networking.uploadImage(path: "profileImages", imageName: uid!, image: image) {
                     self.popErrorAlert(message: "the image has been uploaded successfully")
+            
                 }
+       
         }
 
 
@@ -101,6 +105,10 @@ class SignUpVC: UIViewController {
             self?.selectedImage = image
 //            self?.uploadImage()
             self?.dismiss(animated: true, completion: nil)
+            let uid = Networking.getUserId()
+            Networking.downlodImage(storagePath: "profileImages/\(uid!).png") { url in
+                self!.profileImage.sd_setImage(with: url, completed: nil)
+            }
         }
 
         present(cameraViewController, animated: true, completion: nil)

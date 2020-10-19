@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class HomeVC: UIViewController {
     
@@ -18,6 +19,7 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        profileImageProfile.layer.cornerRadius = profileImageProfile.frame.size.width/2
         setProfileData()
 
         // Do any additional setup after loading the view.
@@ -52,8 +54,8 @@ class HomeVC: UIViewController {
                 self.profileData = profileData
                 print(dump(profileData))
             }
-        Networking.downlodImage(storagePath: "profileImages/\(uid)") { url in
-            <#code#>
+        Networking.downlodImage(storagePath: "profileImages/\(uid!).png") { url in
+            self.profileImageProfile.sd_setImage(with: url, completed: nil)
         }
             
         }

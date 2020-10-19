@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		548A30D3253B23760004B678 /* List2TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548A30D2253B23760004B678 /* List2TVC.swift */; };
+		548A30DB253C5CB90004B678 /* gifts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548A30DA253C5CB90004B678 /* gifts.swift */; };
 		54CC710D25333F2700CD04E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54CC710C25333F2700CD04E6 /* GoogleService-Info.plist */; };
 		54CC711725335AB400CD04E6 /* Cairo Bold 700.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54CC711125335AB400CD04E6 /* Cairo Bold 700.ttf */; };
 		54CC711825335AB400CD04E6 /* Cairo SemiBold 600.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54CC711225335AB400CD04E6 /* Cairo SemiBold 600.ttf */; };
@@ -72,6 +74,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		548A30D2253B23760004B678 /* List2TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = List2TVC.swift; path = FirebaseTemplate/List2TVC.swift; sourceTree = SOURCE_ROOT; };
+		548A30DA253C5CB90004B678 /* gifts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gifts.swift; sourceTree = "<group>"; };
 		54CC710C25333F2700CD04E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		54CC711125335AB400CD04E6 /* Cairo Bold 700.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo Bold 700.ttf"; sourceTree = "<group>"; };
 		54CC711225335AB400CD04E6 /* Cairo SemiBold 600.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo SemiBold 600.ttf"; sourceTree = "<group>"; };
@@ -185,6 +189,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		548A30D9253C5C9D0004B678 /* giftsapp */ = {
+			isa = PBXGroup;
+			children = (
+				548A30DA253C5CB90004B678 /* gifts.swift */,
+			);
+			path = giftsapp;
+			sourceTree = "<group>";
+		};
 		54CC711025335A9E00CD04E6 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +255,7 @@
 		54CC713D2535ED8200CD04E6 /* Gifts */ = {
 			isa = PBXGroup;
 			children = (
+				548A30D2253B23760004B678 /* List2TVC.swift */,
 				54CC71362534D0F900CD04E6 /* CreateList3VC.swift */,
 				54CC71332534D0C400CD04E6 /* CreateList2VC.swift */,
 				54CC71302534D08D00CD04E6 /* CreateList1VC.swift */,
@@ -373,6 +386,7 @@
 		D2C2703E24662C5A005E16A3 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				548A30D9253C5C9D0004B678 /* giftsapp */,
 				D2C2703F24662C5A005E16A3 /* Auth */,
 				D2C2704224662C5A005E16A3 /* Networking.swift */,
 				D2C2704324662C5A005E16A3 /* NetworkingImages.swift */,
@@ -529,8 +543,10 @@
 				D2C2705724662F3F005E16A3 /* Item.swift in Sources */,
 				D209076724B9FB0D0069B920 /* HomeVC.swift in Sources */,
 				D2C2704B24662C68005E16A3 /* Optional.swift in Sources */,
+				548A30DB253C5CB90004B678 /* gifts.swift in Sources */,
 				D2C26FD624662807005E16A3 /* SceneDelegate.swift in Sources */,
 				D2C2704924662C68005E16A3 /* Codable.swift in Sources */,
+				548A30D3253B23760004B678 /* List2TVC.swift in Sources */,
 				54CC712225337E7400CD04E6 /* Stores.swift in Sources */,
 				D2C2704724662C63005E16A3 /* ValidatePassword.swift in Sources */,
 				D2C2704A24662C68005E16A3 /* Keyboard.swift in Sources */,

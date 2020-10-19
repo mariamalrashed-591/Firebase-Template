@@ -8,19 +8,17 @@
 
 import Foundation
 
-struct Gift1: Codable{
+struct Gift1: Codable, Identifiable{
+    var id = UUID()
     var giftName: String
     var giftStore: String
     var categoryType: String
-//    var giftImage: String
+    var giftImage: String
     
 }
 
-//struct Gift3: Codable {
-//    var giftName: String
-//    var giftStore: String
-////    var giftPicture: String
-//}
+
+
 
 let categories = ["birthday", "graduation", "wedding", "new baby", "new house", "eid", "ramadhan", "back from travel", "get well soon", "mothers day"]
  

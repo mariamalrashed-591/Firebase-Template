@@ -39,9 +39,6 @@
                                 <rect key="frame" x="157" y="273" width="100" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Authentication"/>
-                                <connections>
-                                    <segue destination="e8c-h1-vhU" kind="show" id="8oP-aL-YBP"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umg-oS-fIc">
                                 <rect key="frame" x="161" y="316" width="92" height="30"/>
@@ -61,12 +58,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hkP-9o-qDe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="155" y="125"/>
+            <point key="canvasLocation" x="-890" y="99"/>
         </scene>
         <!--تسجيل دخول-->
         <scene sceneID="yf1-W6-NyH">
             <objects>
-                <viewController id="Vni-Cg-ise" customClass="SignInVC" customModule="FirebaseTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignIn" id="Vni-Cg-ise" customClass="SignInVC" customModule="FirebaseTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YOG-CE-Qb1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -398,7 +395,7 @@
         <!--Profile-->
         <scene sceneID="rbj-sC-drW">
             <objects>
-                <viewController id="8So-Xe-hVL" customClass="HomeVC" customModule="FirebaseTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Profile" id="8So-Xe-hVL" customClass="HomeVC" customModule="FirebaseTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsJ-G6-ii5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -473,7 +470,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="djl-lu-E2d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2949" y="848"/>
+            <point key="canvasLocation" x="2947.826086956522" y="847.76785714285711"/>
         </scene>
         <!--Item-->
         <scene sceneID="bgB-vk-lcC">
@@ -587,12 +584,21 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQy-VO-HS6">
+                                <rect key="frame" x="38" y="27" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.30775254959999998" green="0.10713321720000001" blue="0.52552002669999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" image="chevron.backward" catalog="system">
+                                    <color key="titleColor" red="0.52094036340000005" green="0.25858163830000003" blue="0.89416551590000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" red="0.5074655414" green="0.3601654768" blue="0.71767944100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8el-38-kPH">
-                                <rect key="frame" x="0.0" y="104" width="414" height="696"/>
+                                <rect key="frame" x="0.0" y="112" width="414" height="696"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="115" id="Y3u-In-HDq">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="giftCell" rowHeight="115" id="Y3u-In-HDq" customClass="List2TVC" customModule="FirebaseTemplate" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="115"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Y3u-In-HDq" id="LRe-pu-UGf">
@@ -619,6 +625,9 @@
                                                     <state key="normal" title="تعديل">
                                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="editButton:" destination="Y3u-In-HDq" eventType="touchUpInside" id="VlL-Mn-hkb"/>
+                                                    </connections>
                                                 </button>
                                                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="tlo-rO-H2y">
                                                     <rect key="frame" x="20" y="67" width="78" height="34"/>
@@ -636,6 +645,9 @@
                                                     <state key="normal" title="إزالة">
                                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="removeButton:" destination="Y3u-In-HDq" eventType="touchUpInside" id="vqD-DE-xPK"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPP-J5-Rvf">
                                                     <rect key="frame" x="160" y="18" width="93" height="38"/>
@@ -653,25 +665,23 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="editButton" destination="MAQ-Wp-qzH" id="G4N-BW-qYp"/>
+                                            <outlet property="giftImage" destination="2yo-S3-YxR" id="F86-zf-YXV"/>
+                                            <outlet property="giftName" destination="jPP-J5-Rvf" id="qDE-rR-ANF"/>
+                                            <outlet property="giftStore" destination="R1K-Ey-PO7" id="h8Y-LC-gt7"/>
+                                            <outlet property="removeButton" destination="kzV-95-0cf" id="Yt8-bf-uPS"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="QBc-Lf-IUH" id="cZp-4Z-ilO"/>
-                                </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQy-VO-HS6">
-                                <rect key="frame" x="38" y="27" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.30775254959999998" green="0.10713321720000001" blue="0.52552002669999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" image="chevron.backward" catalog="system">
-                                    <color key="titleColor" red="0.52094036340000005" green="0.25858163830000003" blue="0.89416551590000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <color key="titleShadowColor" red="0.5074655414" green="0.3601654768" blue="0.71767944100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Kar-Yb-ZXf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="8el-38-kPH" id="jKK-Dh-xrv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HqG-na-0VX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -767,6 +777,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
                                 <connections>
+                                    <action selector="addImageButton:" destination="UXS-N4-add" eventType="touchUpInside" id="j0Y-TB-gQo"/>
                                     <action selector="createCategory:" destination="8So-Xe-hVL" eventType="touchUpInside" id="vlz-uj-RCC"/>
                                 </connections>
                             </button>
@@ -776,8 +787,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="26d-L6-FGw"/>
                     <connections>
-                        <outlet property="giftName" destination="fQg-N3-C0o" id="ZFc-Xc-Bkg"/>
+                        <outlet property="giftImage" destination="f4L-9n-u4n" id="13G-Eg-IcB"/>
+                        <outlet property="giftName" destination="sgI-Pc-MDV" id="gaC-Bt-b1p"/>
                         <outlet property="giftStore" destination="fQg-N3-C0o" id="TE5-04-09k"/>
+                        <segue destination="QBc-Lf-IUH" kind="presentation" identifier="giftToPresent" modalPresentationStyle="fullScreen" id="3Hc-Vh-o4r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JVm-Iu-Co2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -900,12 +913,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="CjF-2f-Dio" kind="relationship" relationship="rootViewController" id="EWU-Hr-jlr"/>
+                        <segue destination="e8c-h1-vhU" kind="relationship" relationship="rootViewController" id="Txh-LJ-ZZL"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aDR-XD-af0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-584" y="125"/>
+            <point key="canvasLocation" x="183" y="125"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7gO-xb-5jc">
@@ -1185,7 +1198,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="kXf-bA-kZT"/>
+        <segue reference="hwY-ZP-JH1"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="cart" catalog="system" width="128" height="102"/>

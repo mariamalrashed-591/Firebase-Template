@@ -21,9 +21,12 @@ class SignInVC: UIViewController {
     
     
     @IBAction func signIn(){
+        guard validateForm() else{
+            print("fill email and password")
+            return
+        }
         let email = emailField.text!
         let password = passwordField.text!
-        
         Networking.signIn(user: SignInCredentials(email: email, password: password), success: { uid in
             // ✅ Success
             print("You have signed in successfully")
@@ -40,5 +43,15 @@ class SignInVC: UIViewController {
         let okAction = UIAlertAction(title: "Ok", style: .cancel)
         alertController.addAction(okAction)
         present(alertController, animated: true)
+    }
+    
+    func validateForm() -> Bool {
+        guard !emailField.text!.isEmpty else {
+            return false
+        }
+        guard !passwordField.text!.isEmpty else {
+            return false
+        }
+        return true
     }
 }
