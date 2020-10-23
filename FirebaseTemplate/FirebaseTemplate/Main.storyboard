@@ -851,7 +851,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQy-zd-x92" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2424.6376811594205" y="1557.5892857142856"/>
+            <point key="canvasLocation" x="2439" y="2190"/>
         </scene>
         <!--قائمة المحلات-->
         <scene sceneID="zg3-xh-a7A">
@@ -962,10 +962,10 @@
             </objects>
             <point key="canvasLocation" x="953.62318840579712" y="124.55357142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Search-->
         <scene sceneID="NlQ-fM-ez0">
             <objects>
-                <viewController id="Y1i-fg-cRi" sceneMemberID="viewController">
+                <viewController id="Y1i-fg-cRi" customClass="SearchVC" customModule="FirebaseTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gs0-IR-7tT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -981,7 +981,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="70" id="Un1-Ym-oHf">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="friendCell" rowHeight="70" id="Un1-Ym-oHf" customClass="SearchTVC" customModule="FirebaseTemplate" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Un1-Ym-oHf" id="3Ks-Y3-Cx8">
@@ -1008,6 +1008,11 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="friendImage" destination="3Vd-cn-NeA" id="yhW-2H-4Dy"/>
+                                            <outlet property="friendName" destination="dnj-pg-2qK" id="bw3-GP-BNr"/>
+                                            <outlet property="friendUsername" destination="SP3-FA-k7m" id="Fq9-wd-RIq"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -1015,10 +1020,15 @@
                         <viewLayoutGuide key="safeArea" id="QxO-KA-yMn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="wxz-ws-F3D"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="4tf-lI-SkV" id="Xu7-X1-Uoh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RVE-39-yeh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-329" y="1614"/>
+            <point key="canvasLocation" x="1029" y="1558"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dIc-8a-UIL">
@@ -1067,7 +1077,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n25-kx-RcC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="435" y="1614"/>
+            <point key="canvasLocation" x="1732" y="1558"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gAM-U3-wrW">
@@ -1152,10 +1162,11 @@
                         <viewLayoutGuide key="safeArea" id="3LH-es-PnB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1B3-4x-64d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1321" y="1627"/>
+            <point key="canvasLocation" x="2525" y="1558"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="be8-nf-dQP">
@@ -1168,9 +1179,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9Mf-6o-Ond" kind="relationship" relationship="viewControllers" id="xmz-Od-yEU"/>
                         <segue destination="fQX-KS-DZZ" kind="relationship" relationship="viewControllers" id="sGO-LU-kIc"/>
                         <segue destination="8So-Xe-hVL" kind="relationship" relationship="viewControllers" id="Uyv-lB-Rs2"/>
+                        <segue destination="Y1i-fg-cRi" kind="relationship" relationship="viewControllers" id="f6c-Wu-0kD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PjI-ai-ClD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
